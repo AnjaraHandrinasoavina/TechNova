@@ -18,14 +18,6 @@ body{
     line-height:1.7;
     overflow-x:hidden;
 }
-::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#00ffd5;
-    border-radius:20px;
-}
 
 header{
     position:fixed;
@@ -44,29 +36,29 @@ nav{
     padding:20px 8%;
 }
 
-.logo{
+.TechNova{
     font-size:32px;
     font-weight:bold;
 }
 
-.logo span{
+.TechNova span{
     color:#00ffd5;
 }
 
-.nav-links{
+.nav-sommaire{
     display:flex;
     gap:25px;
     list-style:none;
 }
 
-.nav-links a{
+.nav-sommaire a{
     color:white;
     text-decoration:none;
     transition:0.3s;
     font-weight:bold;
 }
 
-.nav-links a:hover{
+.nav-sommaire a:hover{
     color:#00ffd5;
 }
 
@@ -77,12 +69,12 @@ nav{
     border-radius:40px;
 }
 
-.menu-toggle{
+.menu-tech{
     display:none;
     font-size:30px;
     cursor:pointer;
 }
-.hero{
+.accueil{
     height:100vh;
     position:relative;
     display:flex;
@@ -97,7 +89,7 @@ nav{
     center/cover;
 }
 
-.overlay{
+.recouvrir{
     position:absolute;
     width:700px;
     height:700px;
@@ -109,14 +101,14 @@ nav{
     right:-200px;
 }
 
-.hero-content{
+.sous_accueil{
     position:relative;
     z-index:2;
     max-width:900px;
     padding:20px;
 }
 
-.hero-badge{
+.discours{
     display:inline-block;
     padding:10px 20px;
     border-radius:30px;
@@ -127,29 +119,29 @@ nav{
     backdrop-filter:blur(10px);
 }
 
-.hero-content h1{
+.sous_accueil h1{
     font-size:75px;
     line-height:1.1;
     margin-bottom:25px;
 }
 
-.hero-content h1 span{
+.sous_accueil h1 span{
     color:#00ffd5;
 }
 
-.hero-content p{
+.sous_accueil p{
     font-size:22px;
     color:#d1d5db;
     margin-bottom:40px;
 }
 
-.hero-buttons{
+.btn_accueil{
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
 }
-.btn-main{
+.btn_innov{
     background:#00ffd5;
     color:#07131f;
     padding:16px 40px;
@@ -160,12 +152,12 @@ nav{
     box-shadow:0 10px 30px rgba(0,255,213,0.3);
 }
 
-.btn-main:hover{
+.btn_innov:hover{
     transform:translateY(-5px);
     box-shadow:0 15px 40px rgba(0,255,213,0.5);
 }
 
-.btn-secondary{
+.btn_contact{
     border:1px solid rgba(255,255,255,0.15);
     padding:16px 40px;
     border-radius:50px;
@@ -175,18 +167,17 @@ nav{
     backdrop-filter:blur(10px);
 }
 
-.btn-secondary:hover{
+.btn_contact:hover{
     background:rgba(255,255,255,0.08);
 }
 section{
     padding:100px 8%;
     animation:fadeUp 1s ease;
 }
-.card,
-.lang-card,
+.innov,
+.language,
 .contact-item,
-.timeline-box,
-.stat-box{
+.Tech_jour{
     background:rgba(16,29,43,0.75);
     border:1px solid rgba(255,255,255,0.08);
     backdrop-filter:blur(12px);
@@ -198,8 +189,8 @@ section{
     text-align:center;
 }
 
-.card::before,
-.lang-card::before{
+.innov::before,
+.language::before{
     content:'';
     position:absolute;
     width:200px;
@@ -211,74 +202,73 @@ section{
     transition:0.5s;
 }
 
-.card:hover::before,
-.lang-card:hover::before{
+.innov:hover::before,
+.language:hover::before{
     opacity:0.15;
 }
 
-.card:hover,
-.lang-card:hover,
-.timeline-box:hover{
+.innov:hover,
+.language:hover:hover{
     transform:translateY(-12px);
     box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
 
-.card i,
-.lang-card i{
+.innov i,
+.language i{
     font-size:55px;
     color:#00ffd5;
     margin-bottom:20px;
 }
 
-.card h3,
-.lang-card h3{
+.innov h3,
+.language h3{
     margin-bottom:15px;
     font-size:24px;
 }
 
-.card p,
-.lang-card p{
+.innov p,
+.language p{
     color:#cbd5e1;
 }
-.mission{
+.futur{
     background:#09131f;
     text-align:center;
 }
 
-.mission-text{
+.futur-text{
     max-width:900px;
     margin:auto;
 }
 
-.mission h2{
+.futur h2{
     font-size:50px;
     margin-bottom:25px;
 }
 
-.mission p{
+.futur p{
     font-size:20px;
     color:#cbd5e1;
     line-height:1.9;
 }
-.stats{
+.stat{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
 }
 
-.stat-box h2{
+.Tech_jour h2{
     font-size:50px;
     color:#00ffd5;
     margin-bottom:10px;
 }
-.container_img{
+.gallery_img{
     display:flex;
     width:900px;
     height:450px;
     gap:10px;
 }
 
-.panel{
+.image{
     position:relative;
     flex:0.5;
     border-radius:20px;
@@ -287,17 +277,17 @@ section{
     transition:0.5s ease;
 }
 
-.panel img{
+.image img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-.panel.active{
+.image.active{
     flex:5;
 }
 
-.panel::after{
+.image::after{
     content:'';
     position:absolute;
     inset:0;
@@ -305,7 +295,7 @@ section{
     transition:0.5s;
 }
 
-.panel.active::after{
+.image.active::after{
     background:rgba(0,0,0,0);
 }
 .progress{
@@ -381,31 +371,31 @@ section{
   color: white;
   text-decoration: none;
 }
-.universities{
+.université{
     background:#091826;
     padding:80px 8%;
 }
-.section-title{
+.titre{
     text-align:center;
     margin-bottom:60px;
 }
 
-.section-title h2{
+.titre h2{
     font-size:40px;
     color:#00ffd5;
     margin-bottom:15px;
 }
 
-.section-title p{
+.titre p{
     color:#b8c7d9;
     font-size:18px;
 }
-.grid{
+.cadre{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 }
-.uni-card{
+.univ{
     background:#10263b;
     padding:35px 25px;
     border-radius:20px;
@@ -421,7 +411,7 @@ section{
     position:relative;
     overflow:hidden;
 }
-.uni-card::before{
+.univ::before{
     content:"";
     position:absolute;
     width:200px;
@@ -431,25 +421,25 @@ section{
     top:-80px;
     right:-80px;
 }
-.uni-card:hover{
+.univ:hover{
     transform:translateY(-10px);
     box-shadow:0 15px 40px rgba(0,255,213,0.15);
 }
-.uni-card h3{
+.univ h3{
     color:#00ffd5;
     font-size:28px;
     margin-bottom:15px;
     position:relative;
     z-index:1;
 }
-.uni-card p{
+.univ p{
     color:#d5dce5;
     line-height:1.7;
     margin-bottom:30px;
     position:relative;
     z-index:1;
 }
-.btn-universites{
+.btn-univ{
     display:inline-block;
     text-align:center;
     text-decoration:none;
@@ -470,7 +460,7 @@ section{
     position:relative;
     z-index:1;
 }
-.btn-universites:hover{
+.btn-univ:hover{
     transform:scale(1.05);
     box-shadow:0 10px 25px rgba(0,255,213,0.35);
 }
@@ -483,7 +473,7 @@ section{
     margin:0 10px;
     font-size:25px;
 }
-.footer{
+.Fin {
     background:#020b14;
     padding:70px 8%;
     display:grid;
@@ -491,12 +481,12 @@ section{
     gap:30px;
 }
 
-.footer h3{
+.Fin h3{
     color:#00ffd5;
     margin-bottom:20px;
 }
 
-.footer p{
+.Fin p{
     color:#cbd5e1;
 }
 
@@ -513,4 +503,3 @@ section{
     }
 
 }
-
