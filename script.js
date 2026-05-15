@@ -1,19 +1,19 @@
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
+const toggle = document.querySelector('.menu-tech');
+const nav = document.querySelector('.nav-sommaire');
 
 toggle.onclick = () =>{
     nav.classList.toggle('active');
 }
     
-const panels = document.querySelectorAll('.panel');
+const panels = document.querySelectorAll('.image');
 
-panels.forEach(panel => {
+panels.forEach(image => {
 
-    panel.addEventListener('click', () => {
+    image.addEventListener('click', () => {
 
         removeActive();
 
-        panel.classList.add('active');
+        image.classList.add('active');
 
     });
 
@@ -21,9 +21,9 @@ panels.forEach(panel => {
 
 function removeActive(){
 
-    panels.forEach(panel => {
+    panels.forEach(image => {
 
-        panel.classList.remove('active');
+        image.classList.remove('active');
 
     });
 
