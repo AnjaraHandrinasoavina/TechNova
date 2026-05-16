@@ -298,25 +298,7 @@ section{
 .image.active::after{
     background:rgba(0,0,0,0);
 }
-.progress{
-    width:100%;
-    height:10px;
-    background:#1f2937;
-    border-radius:20px;
-    margin-top:15px;
-    overflow:hidden;
-}
 
-.progress div{
-    height:100%;
-    background:#00ffd5;
-}
-.timeline-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-}
 .contact{
     text-align:center;
     width: 72%;
