@@ -621,3 +621,224 @@ section{
     }
 
 }
+/* ================= RESPONSIVE TABLETTE ================= */
+
+@media (max-width: 992px){
+
+    nav{
+        padding:20px 5%;
+    }
+
+    .sous_accueil h1{
+        font-size:55px;
+    }
+
+    .sous_accueil p{
+        font-size:18px;
+    }
+
+    .gallery_img{
+        width:100%;
+        height:350px;
+    }
+
+    .card{
+        width:260px;
+        height:360px;
+    }
+
+    .title{
+        font-size:2rem;
+    }
+
+    .futur h2{
+        font-size:38px;
+    }
+
+    .contact{
+        width:100%;
+        margin-left:0;
+    }
+
+}
+
+/* ================= RESPONSIVE MOBILE ================= */
+
+@media (max-width: 768px){
+
+    .menu-tech{
+        display:block;
+        z-index:1001;
+    }
+
+    .nav-sommaire{
+        position:absolute;
+        top:100%;
+        right:0;
+        width:100%;
+        background:#07131f;
+        flex-direction:column;
+        text-align:center;
+        gap:0;
+        display:none;
+        padding:20px 0;
+    }
+
+    .nav-sommaire.active{
+        display:flex;
+    }
+
+    .nav-sommaire li{
+        margin:15px 0;
+    }
+
+    .TechNova{
+        font-size:26px;
+    }
+
+    .sous_accueil h1{
+        font-size:40px;
+        line-height:1.3;
+    }
+
+    .sous_accueil p{
+        font-size:16px;
+    }
+
+    .btn_accueil{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn_innov,
+    .btn_contact{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+    section{
+        padding:80px 5%;
+    }
+
+    .titre h2{
+        font-size:30px;
+    }
+
+    .titre p{
+        font-size:16px;
+    }
+
+    .futur h2{
+        font-size:30px;
+    }
+
+    .futur p{
+        font-size:17px;
+    }
+
+    .Tech_jour h2{
+        font-size:35px;
+    }
+
+    .gallery_img{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .image{
+        width:100%;
+        height:80px;
+    }
+
+    .image.active{
+        height:300px;
+    }
+
+    .carousel-container{
+        height:500px;
+    }
+
+    .card{
+        width:220px;
+        height:320px;
+        padding:25px 20px;
+    }
+
+    .card i{
+        font-size:3rem;
+    }
+
+    .title{
+        font-size:1.5rem;
+    }
+
+    .content{
+        font-size:0.95rem;
+    }
+
+    .contact-info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact-item{
+        width:100%;
+        max-width:320px;
+    }
+
+    .icon-contact{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .Fin{
+        text-align:center;
+    }
+
+}
+
+/* ================= PETIT MOBILE ================= */
+
+@media (max-width: 480px){
+
+    .sous_accueil h1{
+        font-size:32px;
+    }
+
+    .discours{
+        font-size:12px;
+    }
+
+    .btn_innov,
+    .btn_contact{
+        padding:14px 20px;
+        font-size:14px;
+    }
+
+    .gallery_img{
+        gap:8px;
+    }
+
+    .image.active{
+        height:220px;
+    }
+
+    .card{
+        width:190px;
+        height:290px;
+    }
+
+    .title{
+        font-size:1.2rem;
+    }
+
+    .content{
+        font-size:0.85rem;
+    }
+
+    .univ{
+        min-height:auto;
+    }
+
+}
