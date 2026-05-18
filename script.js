@@ -1,9 +1,17 @@
 const toggle = document.querySelector('.menu-tech');
 const nav = document.querySelector('.nav-sommaire');
 
-toggle.onclick = () =>{
+toggle.onclick = () => {
     nav.classList.toggle('active');
 }
+document.querySelectorAll('.nav-sommaire a')
+.forEach(link => {
+
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+
+});
     
 const panels = document.querySelectorAll('.image');
 
